@@ -2,7 +2,7 @@ import { createSignal } from "solid-js"
 import MobileList from "../lists/MobileList";
 
 function Mobile() {
-  const [open, setOpen] = createSignal(true);
+  const [open, setOpen] = createSignal(false);
   return (
     <div onClick={() => setOpen(prev => !prev)} class="h-full w-[60%] lg:hidden flex">
     <div class="h-[90%] w-[100%] flex flex-col justify-center space-y-[5%] items-end relative" classList={{ " space-y-0 ": open() }}>

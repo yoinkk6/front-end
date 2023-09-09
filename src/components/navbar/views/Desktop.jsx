@@ -9,7 +9,7 @@ function Desktop({ position, setPosition }) {
         <div class={styles.item} onClick={() => setPosition('left-[50%]')}>Gallery</div>
         <div class={styles.item} onClick={() => setPosition('left-[75%]')}>Login</div>
       </div>
-      <div class={`h-[5%] w-1/4 bg-purple-700 absolute bottom-0 ${position()} transition-all duration-[250ms] ease-out hidden lg:block`}></div>
+      <div class={`h-[5%] w-1/4 bg-[dodgerblue] absolute bottom-0 ${position()} transition-all duration-[250ms] ease-out hidden lg:block`}></div>
     </div>
   )
 }
