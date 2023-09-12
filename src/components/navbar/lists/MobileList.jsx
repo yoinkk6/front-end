@@ -11,7 +11,7 @@ function MobileList({ open }) {
       </div>
       <div class="flex items-center justify-start space-x-2 px-2 overflow-hidden">
         <AboutUs/>
-        <div classList={{ "hidden": !open() }}>About Us</div>
+        <div classList={{ "hidden": !open() }} class="whitespace-nowrap">About Us</div>
       </div>
       <div class="flex items-center justify-start space-x-2 px-2 overflow-hidden">
         <Gallery/>
