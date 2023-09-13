@@ -6,14 +6,16 @@ function Home() {
       <div class="h-full w-full flex lg:flex-row flex-col-reverse">
         <div class="lg:h-full h-[40%] lg:w-[45%] w-full flex flex-col justify-center items-center text-left">
           <div class="lg:h-[50%] h-full lg:w-[70%] w-full lg:px-0 px-5">
-            <div class="lg:h-[30%] h-[15%] w-full text-3xl lg:text-[4rem] font-extrabold">ALPHA FOODS</div>
+            <div class="lg:h-[30%] h-[15%] w-full text-3xl lg:text-[4rem] font-extrabold tracking-[0.15rem]">BRAND NAME</div>
             <div class="h-[20%] lg:w-[70%] w-full lg:text-xl text-lg font-bold">Explore Our Premium Selection of Cooking Equipments</div>
             <div class="h-1/2 w-full flex items-end py-5">
-              <button class="h-fit w-fit lg:px-10 lg:py-3 px-5 py-2 rounded-full text-white font-bold text-md lg:text-lg bg-[dodgerblue] hover:bg-opacity-[0.85]">Order</button>
+              <button class="h-fit w-fit lg:px-10 lg:py-3 px-5 py-2 rounded-full text-white font-bold text-md lg:text-lg bg-[dodgerblue] hover:bg-opacity-[0.85]">Products</button>
             </div>
           </div>
         </div>
-        <div class="lg:h-full lg:w-[55%] h-[50%] w-full"></div>
+        <div class="lg:h-full lg:w-[55%] h-[50%] w-full grid place-items-center overflow-hidden">
+          <div class="h-[90%] lg:w-full w-[90%] bg-[dodgerblue] lg:rotate-[45deg] lg:translate-y-[40%] lg:translate-x-[20%]"></div>
+        </div>
       </div>
       <div class="h-full w-full">
         <div class="h-[20%] w-full font-bold text-2xl grid place-items-center">CATEGORIES</div>
