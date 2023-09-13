@@ -3,7 +3,7 @@ import { For } from "solid-js"
 function Products() {
   return (
     <div class="h-[90%] w-full flex">
-      <div class="h-full hidden lg:block w-[30%] bg-[rgb(244,244,244)]">
+      <div class="h-full hidden lg:block w-[30%] bg-gradient-to-b from-[rgb(235,234,234)] to-white">
         <div class="text-2xl font-semibold text-center">CATEGORIES</div>
         <div class="flex justify-center items-center h-[10%]">
           <div class="h-fit w-fit flex">
