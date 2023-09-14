@@ -4,24 +4,20 @@ import Home from "./pages/Home"
 import Products from "./pages/Products"
 import About from "./pages/About"
 import Gallery from "./pages/Gallery"
+import Login from "./pages/Login"
+import { Route, Routes } from "@solidjs/router"
 
 function App() {
-  const [current, setCurrent] = createSignal('home');
   return (
     <div class="h-screen w-screen">
       <Navbar/>
-      <Show when={current() === 'products'}>
-        <Products/>
-      </Show>
-      <Show when={current() === 'home'}>
-        <Home/>
-      </Show>
-      <Show when={current() === 'about'}>
-        <About/>
-      </Show>
-      <Show when={current() === 'about'}>
-        <Gallery/>
-      </Show>
+      <Routes>
+        <Route path={'/'} component={Home}/>
+        <Route path={'/products'} component={Products}/>
+        <Route path={'/about'} component={About}/>
+        <Route path={'/gallery'} component={Gallery}/>
+        <Route path={'/login'} component={Login}/>
+      </Routes>
     </div>
   )
 }

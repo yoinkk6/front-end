@@ -2,7 +2,8 @@ import AboutUs from "../../../svg/navbar/AboutUs"
 import Gallery from "../../../svg/navbar/Gallery"
 import Home from "../../../svg/navbar/Home"
 
-function MobileList({ open }) {
+function MobileList(props) {
+  const { open } = props;
   return (
     <div class="h-[20%] absolute flex flex-col justify-between transition-[width] duration-500 ease-out top-[10%] overflow-hidden right-0" classList={{ " w-[35%] ": open(), " w-0 ": !open() }}>
       <div class="flex items-center justify-start space-x-2 px-2 overflow-hidden">
